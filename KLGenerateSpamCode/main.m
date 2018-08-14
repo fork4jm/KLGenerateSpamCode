@@ -779,7 +779,11 @@ void modifyClassNamePrefix(NSMutableString *projectContent, NSString *sourceCode
         if ([fileName hasPrefix:oldName]) {
             newClassName = [newName stringByAppendingString:[fileName substringFromIndex:oldName.length]];
         } else {
-            newClassName = [newName stringByAppendingString:fileName];
+            if ([fileName hasPrefix:newName]){
+                newClassName = [fileName copy];
+            }else{
+                newClassName = [newName stringByAppendingString:fileName];
+            }
         }
         
         // 文件名 Const.ext > DDConst.ext
