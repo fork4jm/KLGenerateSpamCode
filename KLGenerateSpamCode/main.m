@@ -187,8 +187,9 @@ int main(int argc, const char * argv[]) {
                 }
                 
                 string = arguments[++i];
-                NSArray<NSString *> *names = [string componentsSeparatedByString:@":"];
-                if (names.count < 2) {
+                NSMutableArray<NSString *> *names = [string componentsSeparatedByString:@":"];
+                if (names.count != 2) {
+//                    [names addObject:@""];
                     printf("修改类名前缀参数错误。参数示例：CC>DD，传入参数：%s\n", string.UTF8String);
                     return 1;
                 }
