@@ -67,11 +67,11 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "-modifyClassNamePrefix /Users/ge/jiamian/langren-ios/LangRen.xcodeproj DDDDDDDDD:WLWW"
+            argument = "-modifyClassNamePrefix /Users/ge/jiamian/langren-ios/LangRen.xcodeproj SSWF:LLWT"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "-spamCodeOut /Users/ge/jiamian/langren-ios/LangRen/TrashCode Logging"
+            argument = "-spamCodeOut /Users/ge/jiamian/langren-ios/LangRen/TrashCode Tracking"
             isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
